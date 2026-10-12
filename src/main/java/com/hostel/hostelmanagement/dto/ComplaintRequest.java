@@ -1,0 +1,1 @@
+package com.hostel.hostelmanagement.dto; public class ComplaintRequest { String title,description; public String getTitle(){return title;} public void setTitle(String v){title=v;} public String getDescription(){return description;} public void setDescription(String v){description=v;} }

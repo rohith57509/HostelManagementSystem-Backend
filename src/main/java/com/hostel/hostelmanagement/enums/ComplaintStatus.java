@@ -1,0 +1,1 @@
+package com.hostel.hostelmanagement.enums; public enum ComplaintStatus { OPEN, IN_PROGRESS, RESOLVED }

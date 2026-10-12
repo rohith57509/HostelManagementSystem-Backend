@@ -1,0 +1,1 @@
+package com.hostel.hostelmanagement.dto; public class NoticeRequest { String title,content; public String getTitle(){return title;} public void setTitle(String v){title=v;} public String getContent(){return content;} public void setContent(String v){content=v;} }

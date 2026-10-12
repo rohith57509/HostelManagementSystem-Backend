@@ -1,0 +1,1 @@
+package com.hostel.hostelmanagement.repository; import com.hostel.hostelmanagement.entity.Notice; import org.springframework.data.jpa.repository.JpaRepository; public interface NoticeRepository extends JpaRepository<Notice,Long>{}

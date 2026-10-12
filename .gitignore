@@ -1,0 +1,110 @@
+﻿# Sentinel Hostel Management System â€” Frontend
+
+A modern, responsive, and enterprise-grade hostel management web application built with **React 19** and **Vite**.
+
+## Features
+
+- **Role-Based Portals**: Personalized dashboards for Students, Wardens, and Administrators.
+- **Room Booking & Allocations**: Interactive wing-wise room roster with vacancy indicators and allocation dialogs.
+- **Hostel Fee & Payment Gateway**:
+  - **UPI & QR Mode**: Interactive SVG QR code with dynamic scanning beam, 5-minute countdown timer, one-click VPA copy, quick-switch presets (Google Pay, PhonePe, Paytm, BHIM, CRED), and simulated phone approval.
+  - **Net Banking Mode**: Top 6 scheduled Indian banks (SBI, HDFC, ICICI, Axis, Kotak, PNB) + 20+ additional scheduled banks with simulated secure 2FA SMS OTP netbanking portal.
+  - **Official Treasury E-Receipts**: Instant tax invoice generation with digital clearance seals and @media print optimized receipt printing.
+- **Complaint & Maintenance Registry**: Student ticket submission with Warden real-time progress & resolution status tracking.
+- **Outstation & Night Leave Management**: Apply for leaves with reason/destination and Warden approval decisions.
+- **Hostel Circulars & Bulletins**: Real-time broadcasts for hostel residents.
+- **Admin Live Radar Student Tracker**: Map-based radar visualization to monitor student status & location.
+
+## Technologies Used
+
+- **Framework**: React 19 + Vite
+- **Routing**: React Router DOM (v6)
+- **HTTP Client**: Axios with JWT Bearer Token interceptors
+- **Styling**: Modern CSS3 with CSS variables, Glassmorphism, and responsive grid layouts
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+\\\ash
+# Clone the repository
+git clone https://github.com/rohith57509/HostelManagementSystem-Frontend.git
+cd HostelManagementSystem-Frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+\\\
+
+The frontend will run at: \http://localhost:5173\
+
+### Environment Configuration (Optional)
+To point to a custom backend URL, create a \.env\ file in the root folder:
+\\\env
+VITE_API_URL=http://localhost:8080/api
+\\\
+
+## Build for Production
+\\\ash
+npm run build
+\\\
+"@ | Out-File -FilePath (Join-Path C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem-Frontend "README.md") -Encoding utf8 -Force
+
+# BACKEND: Copy files
+Copy-Item -Path (Join-Path C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem\backend "pom.xml") -Destination "C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem-Backend\" -Force
+Copy-Item -Path (Join-Path C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem\backend "mvnw") -Destination "C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem-Backend\" -Force
+Copy-Item -Path (Join-Path C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem\backend "mvnw.cmd") -Destination "C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem-Backend\" -Force
+Copy-Item -Path (Join-Path C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem\backend "Dockerfile") -Destination "C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem-Backend\" -Force
+if (Test-Path (Join-Path C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem\backend ".mvn")) {
+    Copy-Item -Path (Join-Path C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem\backend ".mvn") -Destination "C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem-Backend\" -Recurse -Force
+}
+Copy-Item -Path (Join-Path C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem\backend "src") -Destination "C:\Users\rohit\Downloads\HostelManagementSystem_Extracted\HostelManagementSystem-Backend\" -Recurse -Force
+
+# BACKEND: .gitignore
+@"
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### macOS / Windows ###
+.DS_Store
+Thumbs.db
