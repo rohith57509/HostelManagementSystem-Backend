@@ -52,7 +52,8 @@ CorsConfigurationSource corsConfigurationSource() {
     config.setAllowedOriginPatterns(List.of(
             "http://localhost:5173",
             "http://127.0.0.1:5173",
-            "https://hostel-management-system-*.vercel.app"
+            "https://*.vercel.app",
+            "https://*.onrender.com"
     ));
     config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
     config.setAllowedHeaders(List.of("*"));
